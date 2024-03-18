@@ -7,11 +7,20 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        "nunito": "'Nunito', sans-serif",
+        "noto": "'Noto Sans', sans-serif"
       },
+      colors: {
+        primary: "#FFDC60",
+        primaryBlue: "#5956E8",
+        secondary: {
+          main: '#292930',
+          darkGray: "#555555",
+          offWhite: "#F6F6F6",
+        },
+      }
+
     },
   },
   plugins: [],
