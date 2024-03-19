@@ -115,13 +115,23 @@ export default function Navbar() {
         <StyledToolbar>
           <Box sx={{ cursor: "pointer" }}>
             <Link href="/">
-              <Image
-                className="lg:w-[211px] lg:h-[81px]"
-                src="/icons/logo.svg"
-                width={140}
-                height={50}
-                alt=""
-              />
+              <Box
+                sx={{ display: "flex", alignItems: "center", fontWeight: 800 }}
+              >
+                <Image
+                  className="lg:w-[71px] lg:h-[71px] xl:w-[81px] xl:h-[81px]"
+                  src="/icons/logo.svg"
+                  width={50}
+                  height={50}
+                  alt=""
+                />
+                <Typography
+                  sx={{ fontSize: { xs: "24px", md: "30px" }, fontWeight: 800 }}
+                  variant="h4"
+                >
+                  Promote
+                </Typography>
+              </Box>
             </Link>
           </Box>
           <Box
@@ -276,8 +286,8 @@ export default function Navbar() {
                 </Box>
               ))}
           </Box>
-          <Box sx={{ display: { xs: "none", md: "Flex" } }}>
-            <CustomButton href="" variant="text">
+          <Box sx={{ display: { xs: "none", md: "flex", gap: "20px" } }}>
+            <CustomButton className="max-lg:hidden" href="" variant="text">
               Login
             </CustomButton>
             <CustomButton>Get Started</CustomButton>

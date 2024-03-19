@@ -24,6 +24,7 @@ export const CustomButton = ({
             variant === "text",
           "w-[200px] lg:w-[252px] ": size === "lg",
           "px-10 py-[18px] w-fit": size === "padding",
+          "min-w-full": size === "full",
         }
       )}
       {...rest}

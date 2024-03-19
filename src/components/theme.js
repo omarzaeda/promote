@@ -9,6 +9,7 @@ export const theme = createTheme({
         },
         secondary: {
             main: '#292930',
+            main2: "#3C3C45",
             darkGray: "#555555",
             offWhite: "#F6F6F6",
         },
@@ -46,17 +47,17 @@ export const theme = createTheme({
             color: "#292930"
         },
         p: {
-            fontFamily: "Noto Space",
+            fontFamily: "Noto Sans",
             fontSize: "18px",
             color: "#555"
         },
         li: {
-            fontFamily: "Noto Space",
+            fontFamily: "Noto Sans",
             fontSize: "18px",
             color: "#555"
         },
         ol: {
-            fontFamily: "Noto Space",
+            fontFamily: "Noto Sans",
             fontSize: "18px",
             color: "#555"
         },

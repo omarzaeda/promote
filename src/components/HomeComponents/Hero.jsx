@@ -26,6 +26,9 @@ const Hero = () => {
             justifyContent: "center",
             alignItems: "center",
             flexDirection: "column",
+            maxWidth: { xs: "500px", lg: "600px" },
+            position: "relative",
+            zIndex: 1000,
           }}
         >
           <Badge>MARKETING AGENCY</Badge>
@@ -34,10 +37,9 @@ const Hero = () => {
             sx={{
               fontWeight: 800,
               fontSize: { xs: "30px", md: "50px", lg: "70px" },
-              mt: "28px",
+              my: "28px",
               position: "relative",
               zIndex: 1000,
-              maxWidth: { xs: "500px", lg: "600px" },
             }}
           >
             A fully integrated digital{" "}
@@ -52,6 +54,10 @@ const Hero = () => {
               marketing
             </Typography>{" "}
             agency
+          </Typography>
+          <Typography variant="p">
+            Lorem ipsum dolor sit amet, ea mundi malorum cum, ocurreret
+            reprehendunt ius ex. Ut vis mazim erroribus forensibus.
           </Typography>
           <Box
             sx={{
@@ -71,14 +77,14 @@ const Hero = () => {
           sx={{
             position: { xs: "static", md: "absolute" },
             right: 0,
-            top: 0,
+            top: "10%",
           }}
         >
           <Box
             sx={{
               position: "relative",
-              width: { xs: 250, md: 450, lg: 700 },
-              height: { xs: 250, md: 450, lg: 700 },
+              width: { xs: 250, md: 500, lg: 700 },
+              height: { xs: 250, md: 500, lg: 700 },
             }}
           >
             <Image src="/images/hero-image.png" alt="" fill />
