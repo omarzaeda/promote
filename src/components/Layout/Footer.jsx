@@ -100,77 +100,91 @@ export default function Footer() {
           mx: "auto",
           flexWrap: { xs: "wrap", md: "nowrap" },
           justifyContent: "space-between",
+          flexDirection: { xs: "column-reverse", md: "row" },
           maxWidth: "1200px",
           width: "100%",
         }}
       >
-        <Box
-          sx={{
-            backgroundColor: "secondary.main2",
-            p: { xs: "25px", md: "50px" },
-            maxWidth: { xs: "100%", md: "400px" },
-            width: "100%",
-            height: "652px",
-          }}
-        >
-          <Link href="/">
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                fontWeight: 800,
-                mb: "13px",
-              }}
-            >
-              <Image
-                className="lg:w-[71px] lg:h-[71px] xl:w-[81px] xl:h-[81px]"
-                src="/icons/logo.svg"
-                width={50}
-                height={50}
-                alt=""
-              />
-              <Typography
-                sx={{
-                  fontSize: { xs: "24px", md: "37px" },
-                  color: "white",
-                  fontWeight: 800,
-                }}
-                variant="h4"
-              >
-                Promote
-              </Typography>
-            </Box>
-          </Link>
-          <Image
-            className="lg:h-[200px]"
-            src="/images/footer-announcement.png"
-            width={287}
-            height={200}
-            alt=""
-          />
-          <Typography variant="h5" sx={{ color: "white", pb: "3px" }}>
-            Subscribe now
-          </Typography>
-          <Typography variant="p" sx={{ color: "#D0D0D0" }}>
-            Industry's standard from dummy and make a type book.
-          </Typography>
-          <Input
-            placeholder="Enter Your Email..."
+        <Box>
+          <Box
             sx={{
-              mt: "18px",
-              py: "18px",
-              px: "26px",
-              color: "white",
-              fontSize: "18px",
-              bgcolor: "#5B5B61",
+              backgroundColor: "secondary.main2",
+              p: { xs: "25px", md: "50px" },
+              maxWidth: { xs: "100%", md: "400px" },
               width: "100%",
-              mb: "18px",
+              height: "652px",
             }}
-          />
-          <CustomButton variant="primary" size="full">
-            Subscribe
-          </CustomButton>
+          >
+            <Link href="/">
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  fontWeight: 800,
+                  mb: "13px",
+                }}
+              >
+                <Image
+                  className="lg:w-[71px] lg:h-[71px] xl:w-[81px] xl:h-[81px]"
+                  src="/icons/logo.svg"
+                  width={50}
+                  height={50}
+                  alt=""
+                />
+                <Typography
+                  sx={{
+                    fontSize: { xs: "24px", md: "37px" },
+                    color: "white",
+                    fontWeight: 800,
+                  }}
+                  variant="h4"
+                >
+                  Promote
+                </Typography>
+              </Box>
+            </Link>
+            <Image
+              className="lg:h-[200px]"
+              src="/images/footer-announcement.png"
+              width={287}
+              height={200}
+              alt=""
+            />
+            <Typography variant="h5" sx={{ color: "white", pb: "3px" }}>
+              Subscribe now
+            </Typography>
+            <Typography variant="p" sx={{ color: "#D0D0D0" }}>
+              Industry's standard from dummy and make a type book.
+            </Typography>
+            <Input
+              placeholder="Enter Your Email..."
+              sx={{
+                mt: "18px",
+                py: "18px",
+                px: "26px",
+                color: "white",
+                fontSize: "18px",
+                bgcolor: "#5B5B61",
+                width: "100%",
+                mb: "18px",
+              }}
+            />
+            <CustomButton variant="primary" size="full">
+              Subscribe
+            </CustomButton>
+          </Box>
+          <Box
+            sx={{
+              py: "30px",
+              width: "100%",
+              textAlign: { xs: "left", md: "center" },
+              display: { xs: "block", md: "none" },
+            }}
+          >
+            Copyright © Nextlevel | Designed by VictorFlow - Powered by Webflow
+          </Box>
         </Box>
+
         <Box
           sx={{
             display: "flex",
@@ -216,7 +230,7 @@ export default function Footer() {
                   sx={{
                     color: "primary.main",
                     fontWeight: 700,
-                    fontSize: { xs: "16px" },
+                    fontSize: { xs: "16px", md: "20px" },
                   }}
                   variant="h5"
                 >
@@ -320,6 +334,7 @@ export default function Footer() {
               py: "30px",
               width: "100%",
               textAlign: { xs: "left", md: "center" },
+              display: { xs: "none", md: "block" },
             }}
           >
             Copyright © Nextlevel | Designed by VictorFlow - Powered by Webflow
