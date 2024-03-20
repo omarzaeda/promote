@@ -187,7 +187,7 @@ export default function Footer() {
               justifyContent: "space-between",
               alignItems: "center",
               gap: { xs: "40px", md: "60px", xl: "110px" },
-              flexWrap: { xs: "wrap", md: "nowrap" },
+              flexWrap: { xs: "wrap", lg: "nowrap" },
             }}
           >
             <Box sx={{ width: "100%" }}>
@@ -209,12 +209,14 @@ export default function Footer() {
                   py: "12px",
                   my: "17px",
                   borderRadius: "6px",
+                  width: "fit-content",
                 }}
               >
                 <Typography
                   sx={{
                     color: "primary.main",
                     fontWeight: 700,
+                    fontSize: { xs: "16px" },
                   }}
                   variant="h5"
                 >

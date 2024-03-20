@@ -6,7 +6,7 @@ import CustomButton from "../Atoms/CustomButton";
 
 const Hero = () => {
   return (
-    <Container maxWidth="xl">
+    <Container maxWidth="lg">
       <Box
         sx={{
           display: { xs: "flex", md: "block" },
@@ -36,7 +36,7 @@ const Hero = () => {
             variant="h1"
             sx={{
               fontWeight: 800,
-              fontSize: { xs: "30px", md: "50px", lg: "70px" },
+              fontSize: { xs: "30px", sm: "50px", lg: "70px" },
               my: "28px",
               position: "relative",
               zIndex: 1000,
@@ -48,7 +48,7 @@ const Hero = () => {
               sx={{
                 color: "primary.blue",
                 fontWeight: 800,
-                fontSize: { xs: "30px", md: "50px", lg: "70px" },
+                fontSize: { xs: "30px", sm: "50px", lg: "70px" },
               }}
             >
               marketing
@@ -76,15 +76,15 @@ const Hero = () => {
         <Box
           sx={{
             position: { xs: "static", md: "absolute" },
-            right: 0,
+            right: { xs: 0, md: -50, lg: -100 },
             top: "10%",
           }}
         >
           <Box
             sx={{
               position: "relative",
-              width: { xs: 250, md: 500, lg: 700 },
-              height: { xs: 250, md: 500, lg: 700 },
+              width: { xs: 290, sm: 500, lg: 700 },
+              height: { xs: 290, sm: 500, lg: 700 },
             }}
           >
             <Image src="/images/hero-image.png" alt="" fill />
