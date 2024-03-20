@@ -1,10 +1,10 @@
 import "./globals.css";
-import Navbar from "@/components/Layouts/Navbar";
-import Footer from "@/components/Layouts/Footer";
+import Navbar from "@/components/Layout/Navbar";
+import Footer from "@/components/Layout/Footer";
 import { ThemeProvider } from "@mui/material";
 import { theme } from "@/components/theme";
 import { usePathname } from "next/navigation";
-import MainLayout from "@/components/Layouts/MainLayout";
+import MainLayout from "@/components/Layout/MainLayout";
 
 export const metadata = {
   title: {

@@ -104,14 +104,13 @@ export default function Navbar() {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: 0,
   });
   return (
     <AppBar
       position="static"
       sx={{ backgroundColor: "transparent", boxShadow: "none" }}
     >
-      <Container maxWidth="xl">
+      <Container maxWidth="lg" sx={{ p: { xs: "24px", md: "0px" } }}>
         <StyledToolbar>
           <Box sx={{ cursor: "pointer" }}>
             <Link href="/">

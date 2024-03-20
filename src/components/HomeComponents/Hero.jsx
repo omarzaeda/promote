@@ -48,7 +48,7 @@ const Hero = () => {
               sx={{
                 color: "primary.blue",
                 fontWeight: 800,
-                fontSize: { xs: "30px", sm: "50px", lg: "70px" },
+                fontSize: { xs: "30px", md: "50px", lg: "70px" },
               }}
             >
               marketing

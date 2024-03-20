@@ -1,5 +1,5 @@
 import Hero from "@/components/HomeComponents/Hero";
-import Navbar from "@/components/Layouts/Navbar";
+import Navbar from "@/components/Layout/Navbar";
 import Image from "next/image";
 export const metadata = {
   title: {
