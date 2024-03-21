@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <link href="/icons/promote-faicon.png" rel="shortcut icon" type="image/x-icon"></link>
-      <body>
+      <body className="relative">
         <MainLayout>
           {children}
         </MainLayout>

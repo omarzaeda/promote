@@ -13,6 +13,9 @@ export const theme = createTheme({
             darkGray: "#555555",
             offWhite: "#F6F6F6",
         },
+        grey: {
+            1: "#D0D0D0"
+        }
     },
     typography: {
         fontFamily: "Nunito",
@@ -25,6 +28,7 @@ export const theme = createTheme({
             fontSize: "40px",
             fontWeight: 600,
             color: "#292930"
+
         },
         h3: {
             fontSize: "35px",

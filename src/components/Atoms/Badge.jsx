@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 
-const Badge = ({ children }) => {
+const Badge = ({ children, color }) => {
   return (
     <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
       <Box sx={{ display: "flex", gap: 0.5 }}>
@@ -30,7 +30,12 @@ const Badge = ({ children }) => {
       </Box>
       <Typography
         component="p"
-        sx={{ textTransform: "uppercase", fontWeight: 500, fontSize: "15px" }}
+        sx={{
+          textTransform: "uppercase",
+          fontWeight: 500,
+          fontSize: "15px",
+          color: color,
+        }}
       >
         {children}
       </Typography>

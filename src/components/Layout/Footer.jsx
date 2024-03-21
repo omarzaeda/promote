@@ -89,7 +89,7 @@ export default function Footer() {
     <Box
       sx={{
         backgroundColor: "secondary.main",
-        py: { xs: "80px", md: "190px" },
+        py: { xs: "80px", md: "100px" },
         color: "white",
       }}
     >
